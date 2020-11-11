@@ -9,7 +9,7 @@ function handleSubmit(event) {
   if (checkForUrl(formText)) {
     console.log("valid url");
 
-    fetch("http://localhost:8080/article", {
+    fetch("http://localhost:8081/article", {
       method: "POST",
       cache: "no-cache",
       credentials: "same-origin",
@@ -36,7 +36,7 @@ function handleSubmit(event) {
         )}`;
       });
   } else {
-    console.log("invalid url");
+    alert("invalid url");
   }
 }
 
